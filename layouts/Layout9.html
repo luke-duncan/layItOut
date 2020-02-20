@@ -6,18 +6,19 @@ body
 {
     width: 600px;
 }
-    
+   
 div
 {
     display:block;
-    width:600px;
-    height:400px;
+    width:300px;
+    height:200px;
 }
-    
+   
 .b1
 {
     background-color:red;
-    width: 1200px;
+    width: 600px;
+    position: absolute
 }
 
 .b2
@@ -25,7 +26,6 @@ div
     background-color:yellow;
     float:left;
     height: 1600px;
-    width: 400px;
 }
 
 .b3
@@ -33,13 +33,15 @@ div
     background-color:blue;
     color:white;
     float: right;
-    clear: left;
+    clear: right;
+    position:relative;
 }
 
 .b4
 {
     background-color:orange;
     float: right;
+    clear: right;
 }
 
 .b5
@@ -47,28 +49,34 @@ div
     background-color:purple;
     color:white;
     float: right;
+    clear: right;
 }
 
 .b6
 {
     background-color:darksalmon;
-    float:right;
+    height: 250px;
+    width: 200px;
+    float: left;
+    position:relative;
 }
 
 
-    
+   
 </style>
 </head>
 <html>
 <body>
+   
     <div class = "b1">b1</div>
     <div class = "b2">b2</div>
-    <div class = "b3">b3</div>
+    <div class = "b6" z-index:3; margin: 4px;>b6</div>
+       <div class = "b3">b3</div>
     <div class = "b4">b4</div>
     <div class = "b5">b5</div>
-    <div class = "b6">b6</div>
-    
-    
+     
+   
+   
 </body>
 
 </html>
